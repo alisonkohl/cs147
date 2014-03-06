@@ -139,6 +139,19 @@ p {
   margin-right: auto;
   float: none;
 }
+
+.helpalternative {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: auto;
+  display: block;
+  width: 80px;
+  margin-right: auto;
+  float: none;
+}
+
 .helpheader {
   display: block;
   width: 90%;

@@ -69,7 +69,13 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
   <div class="information">m a c h i n e<br/>a v a i l a b i l i t y</div><br/>
   <ul class="w-list-unstyled machinelist" id="list">
   </ul>
-  <img class="icon" src="images/Sports-Dumbbell-icon.png" width="50" alt="530fa16800a59e9c14000077_Sports-Dumbbell-icon.png"><a class="button help" href="/help" target="_blank">help!</a>
+  <img class="icon" src="images/Sports-Dumbbell-icon.png" width="50" alt="530fa16800a59e9c14000077_Sports-Dumbbell-icon.png">
+  {{#if data.alternate}}
+    <a id="helpbutton" class="button helpalternative" href="/help" target="_blank">help!</a>
+  {{else}}
+    <a id="helpbutton" class="button help" href="/help" target="_blank">help!</a>
+  {{/if}}
+  
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
   <script>

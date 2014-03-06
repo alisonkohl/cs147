@@ -81,6 +81,7 @@ app.get('/station-started', stationStarted.markStationAsStarted);
 app.get('/station-finished', stationFinished.markStationAsFinished);
 app.get('/gym/:id', gym.gymInfo);
 app.get('/help', help.helpText);
+app.get('/alternate', index.viewAlternate);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

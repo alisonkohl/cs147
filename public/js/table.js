@@ -5,6 +5,9 @@ $(document).ready(function() {
 })
 
 function initializePage() {
+	$("#helpbutton").click(function() {
+		ga('send', 'event', 'button', 'click');
+	});
 	$('#gymselect').change(function() {
 		var selectedGym = $('#gymselect').val();
 		var search = $('#name').val();
