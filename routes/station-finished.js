@@ -33,8 +33,6 @@ exports.markStationAsFinished = function(req, res) {
 			res.render('station-finished', {'min': minutes, 'sec':seconds});
 		});
 	}
-
-	
 }
 
 $('#help').on('click', function() {
