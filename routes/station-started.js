@@ -18,3 +18,7 @@ exports.markStationAsStarted = function(req, res) {
 	}
 	res.render('station-started');
 }
+
+$('#help').on('click', function() {
+  ga('send', 'event', 'button', 'click');
+});

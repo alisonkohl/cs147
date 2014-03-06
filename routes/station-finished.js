@@ -36,3 +36,7 @@ exports.markStationAsFinished = function(req, res) {
 
 	
 }
+
+$('#help').on('click', function() {
+  ga('send', 'event', 'button', 'click');
+});

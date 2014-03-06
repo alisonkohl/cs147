@@ -24,3 +24,7 @@ exports.view = function(req, res) {
     	});
 	} 
 };
+
+$('#help').on('click', function() {
+  ga('send', 'event', 'button', 'click');
+});
